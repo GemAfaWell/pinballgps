@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinball Locator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pinball Locator</h1>
+        <form>
+            <!-- by latitude and longitude -->
+            <div class="form-group">
+                <label for="latitude">Latitude</label>
+                <input type="text" name="latitude" id="latitude" placeholder="Enter latitude">
+            </div>
+            <div class="form-group">
+                <label for="longitude">Longitude</label>
+                <input type="text" name="longitude" id="longitude" placeholder="Enter longitude">
+            </div>
+            <!-- Geolocation -->
+            <button type="button" id="geolocation">Near Me</button>
+            <button type="submit" id="submit">Find Nearest Pinball</button>
+        </form>
+        <div id="locations">
+        </div>
+    </div>
+    <script src="js/fetch.js"></script>
+    <script src="js/geo.js"></script>
+</body>
+
+</html>
